@@ -16,10 +16,13 @@ contentTwo.style.color = "blue";
 container.appendChild(contentTwo);
 
 
-//const contentThree = document.createElement("div");
-//contentThree.classList.add("contentThree");
-//contentThree.style.backgroundColor = "pink";
-//contentThree.style.borderColor = "black"
-//contentThree.appendChild("h1") 
+const contentThree = document.createElement("div");
+contentThree.classList.add("contentThree");
+contentThree.style.backgroundColor = "pink";
+contentThree.style.borderColor = "black";
+contentThree.appendChild("h1");
+    h1.textContent = "I'm in a div";
+    h1.style.color = "green";
+//contentThree.appendChild("p");
 
-  
+container.appendChild(contentThree);
