@@ -17,12 +17,18 @@ container.appendChild(contentTwo);
 
 
 const contentThree = document.createElement("div");
-contentThree.classList.add("contentThree");
-contentThree.style.backgroundColor = "pink";
-contentThree.style.borderColor = "black";
-contentThree.appendChild("h1");
-    h1.textContent = "I'm in a div";
-    h1.style.color = "green";
-//contentThree.appendChild("p");
+    contentThree.classList.add("contentThree");
+    contentThree.style.backgroundColor = "pink";
+    contentThree.style.borderColor = "black";
+const contentFour = document.createElement("h1");
+    contentFour.classList.add("contentFour");
+    contentFour.textContent = "I'm in a div";
+    contentFour.style.color = "green";
+const contentFive = document.createElement("p");
+    contentFive.classList.add("contentFive");
+    contentFive.textContent = "Me too!";
+
+contentThree.appendChild(contentFour);
+contentThree.appendChild(contentFive);
 
 container.appendChild(contentThree);
